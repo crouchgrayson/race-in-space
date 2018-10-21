@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Grayson's Door Prize Project</title>
+    <script src="doorprize.js"></script>
+    <!-- <link href="styleheet.css" rel="stylesheet" type="text/css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <style>
+        body {
+            background-image: url("https://images.unsplash.com/photo-1465101162946-4377e57745c3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0ae83373fe7bf60aaf6ceb8daa337fc9&auto=format&fit=crop&w=1357&q=80");
+            color: white;
+            background-size: cover;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        textarea {
+            width: 150px;
+            height: 150px;
+            border: 3px solid lightgray;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        button {
+            height: 25px;
+            background-color: mediumaquamarine;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: aquamarine;
+        }
+
+        li {
+            display: none;
+            list-style: none;
+            margin-top: 15px;
+            font-size: 20px;
+        }
+
+        #racer1 {
+            color: rgb(105, 193, 223);
+            font-size: 50px;
+        }
+
+        #racer2 {
+            color: lightcoral;
+            font-size: 50px;
+        }
+
+        #racer3 {
+            color: rgb(29, 160, 153);
+            font-size: 50px;
+        }
+
+        #racer4 {
+            color: rgb(245, 84, 84);
+            font-size: 50px;
+        }
+
+        #racer5 {
+            color: lemonchiffon;
+            font-size: 50px;
+        }
+
+        #racer6 {
+            color: lightgreen;
+            font-size: 50px;
+        }
+
+        #position1 {
+            position: absolute;
+            left: 0px;
+            top: 150px;
+        }
+
+        #position2 {
+            position: absolute;
+            left: 0px;
+            top: 250px;
+        }
+
+        #position3 {
+            position: absolute;
+            left: 0px;
+            top: 350px;
+        }
+
+        #position4 {
+            position: absolute;
+            left: 0px;
+            top: 450px;
+        }
+
+        #position5 {
+            position: absolute;
+            left: 0px;
+            top: 550px;
+        }
+
+        #position6 {
+            position: absolute;
+            left: 0px;
+            top: 650px;
+        }
+
+        /* #winner {
+            text-align: center;
+        } */
+    </style>
+</head>
+
+<body>
+    <h1>A Race in Space</h1>
+
+    <div id="namesPage" style="display: block">
+        <form>
+            <p style="margin: 0px; font-size: 20px">Enter Names</p>
+            <textarea name="enter" id="names"></textarea>
+            <br>
+            <button type="button" id="contestantsBtn" name="enter">Pick Contestants</button>
+        </form>
+    </div>
+
+    <div id="contestantsPage" style="display: none">
+        <h3 style="text-align: left; margin-left: 25px">Contestants</h3>
+        <button type="button" id="raceBtn" style="position: absolute; top: 80px; left: 160px">Race!</button>
+        <button type="button" id="cancelBtn" style="position: absolute; top: 80px; left: 215px">Cancel</button>
+
+        <ul>
+            <li>
+                <i id="racer1" name="racer" class="fas fa-space-shuttle"></i>
+            </li>
+            <li>
+                <i id="racer2" name="racer" class="fas fa-space-shuttle"></i>
+            </li>
+            <li>
+                <i id="racer3" name="racer" class="fas fa-space-shuttle"></i>
+            </li>
+            <li>
+                <i id="racer4" name="racer" class="fas fa-space-shuttle"></i>
+            </li>
+            <li>
+                <i id="racer5" name="racer" class="fas fa-space-shuttle"></i>
+            </li>
+            <li>
+                <i id="racer6" name="racer" class="fas fa-space-shuttle"></i>
+            </li>
+        </ul>
+    </div>
+
+    <div id="racePage" style="display: none;">
+
+    </div>
+
+    <div id="winnerPage" style="display: none; text-align: center">
+        <h3 style="margin-top: 50px">WINNER!</h3>
+        <div id="winner">
+        </div>
+        <button type="button" id="newRaceBtn" style="margin-top: 10px">New Race</button>
+    </div>
+
+</body>
+
+</html>
